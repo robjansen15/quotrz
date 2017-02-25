@@ -50,3 +50,19 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+
+#LEGAL
+This is a simple wrapper around the API used in the official apps. The author provides no investment, legal, or tax advice and is not responsible for any damages incurred while using this software. Neither this software nor its author are affiliated with Robinhood Financial LLC in any way.
+
+For Robinhood's terms and disclosures, please see their website at http://robinhood.com/
+
+#LICENSE
+Copyright (C) Rob Jansen.
+
+This library is free software; you can redistribute it and/or modify it under the terms found in the Artistic License 2.
+
+Other copyrights, terms, and conditions may apply to data transmitted through this module. Please refer to the LEGAL section.
+
+#AUTHOR
+Rob Jansen 
