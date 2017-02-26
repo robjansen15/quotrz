@@ -15,17 +15,21 @@ export default Ember.Controller.extend({
 
           var splitStr = myResp.split(',');
 
-          $('#timestamp').text(new Date().toLocaleString());
+          Ember.$('#timestamp').text(new Date().toLocaleString());
 
-          $('#price').text('Price: $' + splitStr[4].split(':')[1]);
-          $('#extendedPrice').text('Extended Price: $' + splitStr[5].split(':')[1]);
-          $('#askPriceQuantity').text('Ask Price / Ask Size: ' + '$' + splitStr[0].split(':')[1] + ' / ' + splitStr[1].split(':')[1]);
-          $('#bidPriceQuantity').text('Bid Price / Bid Size: ' + '$' + splitStr[2].split(':')[1] + ' / ' + splitStr[3].split(':')[1]);
+          Ember.$('#price').text('Price: $' + splitStr[4].split(':')[1]);
+          Ember.$('#extendedPrice').text('Extended Price: $' + splitStr[5].split(':')[1]);
+          Ember.$('#askPriceQuantity').text('Ask Price / Ask Size: ' + '$' + splitStr[0].split(':')[1] + ' / ' + splitStr[1].split(':')[1]);
+          Ember.$('#bidPriceQuantity').text('Bid Price / Bid Size: ' + '$' + splitStr[2].split(':')[1] + ' / ' + splitStr[3].split(':')[1]);
 
-          $('#output').text('');
+          ajax.$$('#output').text('');
         },
         error: function() {
-          $('#output').text('Failed to retrieve symbol, please check and try again.');
+          Ember.$('#output').text('Failed to retrieve symbol, please check and try again.');
+          Ember.$('#price').text('');
+          Ember.$('#extendedPrice').text('');
+          Ember.$('#askPriceQuantity').text('');
+          Ember.$('#bidPriceQuantity').text('');
         }
       });
 
