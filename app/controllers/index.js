@@ -22,7 +22,7 @@ export default Ember.Controller.extend({
           Ember.$('#askPriceQuantity').text('Ask Price / Ask Size: ' + '$' + splitStr[0].split(':')[1] + ' / ' + splitStr[1].split(':')[1]);
           Ember.$('#bidPriceQuantity').text('Bid Price / Bid Size: ' + '$' + splitStr[2].split(':')[1] + ' / ' + splitStr[3].split(':')[1]);
 
-          ajax.$$('#output').text('');
+          Ember.$$('#output').text('');
         },
         error: function() {
           Ember.$('#output').text('Failed to retrieve symbol, please check and try again.');
