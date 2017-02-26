@@ -1,0 +1,35 @@
+{{outlet}}
+
+<div class="jumbotron">
+  <h1>Enter a Stock Symbol</h1>
+  <form>
+    {{input type='text' value=symbol placeholder='APPL'}}
+
+    <p class="lead"></p>
+
+    <button {{action 'getQuote'}} class="btn btn-lg btn-success">Lookup</button>
+  </form>
+
+  <br/>
+  <div id="timestamp"></div>
+  <br />
+  <div id="output"></div>
+  <div>
+    <div id="price"></div>
+    <div id="extendedPrice"></div>
+    <div id="askPriceQuantity"></div>
+    <div id="bidPriceQuantity"></div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
